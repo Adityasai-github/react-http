@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import ClassCounter from './components/ClassCounter'
+import HookCounter from './components/HookCounter'
+import HookCounterTwo from './components/HookCounterTwo'
+import HookCounterThree from './components/HookCounterThree'
+import ClassCounterOne from './components/ClassCounterOne'
+import HookCounterOne from './components/HookCounterOne'
+import ClassMouse from './components/ClassMouse'
+import HookMouse from './components/HookMouse'
+import IntervalHookCounter from './components/IntervalHookCounter'
+import DataFetching from './components/DataFetching'
+class App extends Component {
+	render() {
+		return (
+			<div className="App">
+				<DataFetching />
+				{/* <HookMouse /> */}
+				{/* <HookCounterOne />
+				<ClassCounterOne />
+                <ClassMouse /> */}
+                {/* <IntervalHookCounter />    */}
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+        {/* < HookCounterThree /> */}
+        {/* < HookCounterTwo /> */}
+				 {/* <ClassCounter />
+				 <HookCounter /> */}
+			</div>
+		)
+	}
 }
 
-export default App;
+export default App
